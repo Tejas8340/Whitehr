@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class-card {
+            float: left;
+            width: 25%;
+            margin: 10px;
+            padding: 10px;
+            margin-left: 30px;
+            margin-top: 200px;
+        }
+        
+        .btn {
+            width: 80%;
+            height: 30px;
+            margin-left: 10%;
+            margin-top: 20px;
+            border-radius: 7px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        .btn1 {
+            width: 80%;
+            height: 25px;
+            margin-left: 10%;
+            border-radius: 7px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .class-card {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            /* Adjust the width and margin for inputs in mobile view */
+            #country-code {
+                width: 60px;
+                margin-left: 0;
+            }
+
+            #contact-number {
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="class-card">
+            <img src="images/headphone.png" alt="" style="margin-left: 80%;">
+        </div>
+        <div class="class-card">
+            <h1>Get in touch</h1>
+            <p>We’re devoted to our mission of making your kids creators versus consumers of technology. We’re available
+                24x7 for you at 02071531199.</p>
+        </div>
+        <div class="class-card" style="border: 1px solid black; height: 350px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);">
+            <h1>Log In to Your Account</h1>
+            <div style="float: left;">
+                <select id="country-code" name="country-code" style="height: 30px; width: 80px; border-radius: 5px;">
+                    <option value="91">+91</option>
+                    <option value="1">+1 (USA)</option>
+                    <option value="44">+44 (UK)</option>
+                    <option value="33">+33 (France)</option>
+                    <option value="81">+81 (Japan)</option>
+                </select>
+            </div>
+            <div style="float: left;">
+                <input type="text" id="contact-number" name="contact-number" placeholder="Enter your contact number"
+                    style="height: 25px; width: 250px; border-radius: 5px; margin-left: 10%;">
+            </div>
+            <div style="border: 1px solid black; margin-top: 30px; margin-left: 0; width: 100%; height: 60px; display: inline-block;">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                    style="width: 20px; height: 20px; margin-top: 5px; margin-left: 10px;">
+                <label for="vehicle1"> I'm Robot</label>
+                <img src="images/Recaptcha.png" alt=""
+                    style="width: 40px; height: 30px; margin-left: 20px; margin-top: 10px; margin-left: 35px;">
+            </div>
+            <button class="btn">Login</button>
+            <h3 style="text-align: center;">OR</h3>
+            <button class="btn1">Login with Password</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img:hover {
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            cursor: not-allowed;
+        }
+
+        .btn1 {
+            background-color: white;
+            font-weight: bolder;
+            width: 25%;
+            height: 40px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .checkbox-container{
+            margin-right: 50px;
+        }
+
+        .btn1:hover {
+            cursor: pointer;
+            background-color: orange;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .btn1 {
+                width: 80%;
+                height: 50px;
+                margin: 10px auto;
+                display: block;
+                text-align: center; /* Center-align btn1 in mobile view */
+            }
+
+            input[type="text"] {
+                width: 80%; /* Reduced width for mobile */
+                height: 25px;
+                border-radius: 5px;
+                margin-left: 0;
+            }
+
+            .checkbox-container {
+                width: 80%; /* Adjusted width for mobile */
+                text-align: center;
+                margin: 20px auto;
+                display: block;
+            }
+
+            input[type="checkbox"] {
+                width: 30px;
+                height: 30px;
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 1px solid black; width: 30%; margin-left: 35%; padding: 20px;">
+        <img src="images/logo.png" alt="" style="height: 100px;">
+        <h1 style="margin-top: 5px;">Book Your Free All Class</h1>
+        <p>Limited Spots Left!</p>
+        <div>
+            <div style="float: left;">
+                <select id="country-code" name="country-code"
+                    style="height: 30px; width: 80px; border-radius: 5px;">
+                    <option value="91">+91</option>
+                    <option value="1">+1 (USA)</option>
+                    <option value="44">+44 (UK)</option>
+                    <option value="33">+33 (France)</option>
+                    <option value="81">+81 (Japan)</option>
+                </select>
+            </div>
+            <div style="float: left;">
+                <input type="text" id="contact-number" name="contact-number"
+                    placeholder="Enter your contact number"
+                    style="height: 25px; width: 80%; border-radius: 5px; margin-left: 0;"> <!-- Reduced width for mobile -->
+            </div>
+        </div>
+        <div style=" margin-top: 80px;">
+            <p>Select your child's grade/class in school</p>
+            <button class="btn1">class <br> 3</button>
+            <button class="btn1">class <br> 4</button>
+            <button class="btn1">class <br> 5</button>
+            <button class="btn1">class <br> 6</button>
+            <button class="btn1">class <br> 7</button>
+        </div>
+        <div
+            style="border: 1px solid black; margin-top: 40px; margin-left: 60px; width: 80%; height: auto; text-align: center; display: block;"
+            class="checkbox-container"> <!-- Adjusted width and height for mobile -->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                style="width: 30px; height: 30px; margin-top: 5px; margin-left: 10px;">
+            <label for="vehicle1"> I'm Robot</label>
+            <img src="images/Recaptcha.png" alt=""
+                style="width: 40px; height: 30px; margin-left: 20px; margin-top: 10px; margin-left: 35px;">
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus explicabo labore recusandae quas consequuntur animi nisi quos odit reprehenderit, totam veritatis! Quod reprehenderit cum nihil tenetur eum, repudiandae atque laboriosam perspiciatis quis blanditiis quo est cumque saepe voluptatum doloribus corrupti, dolore sequi ratione! Quod reiciendis modi cupiditate veritatis commodi mollitia doloribus cumque tempore sed fugit quidem ducimus aliquam molestiae, distinctio nisi atque corporis culpa dolorem delectus! Eos, doloremque atque. Totam a dolorum sit illo, harum omnis, necessitatibus, eum quae magnam vel corporis nobis ullam pariatur. Blanditiis porro quidem praesentium cum tempore commodi asperiores sapiente vero, maxime vel eveniet sit corporis.</p>
+        </div>
+        <button class="btn">Schedule a Free Class</button>
+    </div>
+</body>
+
+</html>

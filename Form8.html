@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Common Styles */
+        .class-card {
+            float: left;
+            width: 40%;
+            margin: 20px;
+            padding: 20px;
+        }
+        .btn {
+            width: 20%;
+            height: 40px;
+            padding: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn1 {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 17px;
+        }
+        
+        /* Styles for Input Fields */
+        input[type="email"],
+        input[type="name"] {
+            width: 100%;
+            margin-top: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            height: 25px;
+            padding: 5px;
+        }
+
+        input[type="text"] {
+            height: 28px;
+            border-radius: 5px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            /* Additional CSS for Mobile */
+            .class-card {
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px;
+            }
+            .btn {
+                width: 45%;
+                margin: 5px;
+                font-size: 14px;
+            }
+            .btn1 {
+                width: 100%;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            /* Set width to 100% for the image div */
+            .class-card:nth-child(odd) {
+                width: 100%;
+            }
+
+            /* Set width to 100% for the div with margin-left */
+            .class-card:nth-child(even) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="class-card" style="background-image: url(images/banner_2.jpg); background-size: 100% 100%; border: 1px solid black;  height: 600px; color: white;">
+            <h1>We are mission-driven, not money-driven</h1>
+            <p>For all new customers, we offer a money-back guarantee for all valid credits remaining in your account. Provided such a refund request is made by the customer within 45 days of the First payment made towards the course fee to Whitehat Jr. Refer refund policy for details Additional terms & conditions apply.</p>
+        </div>
+        <div class="class-card">
+            <h2>Coding Payment Request</h2>
+            <input type="email" placeholder="Parent Email ID"><br>
+            <input type="name" placeholder="Parent Name"><br>
+            <div style="float: left; margin-top: 10px; margin: 10px;">
+                <select id="country-code" name="country-code" style="height: 30px; width: 80px; border-radius: 5px;">
+                    <option value="91">+91</option>
+                    <option value="1">+1 (USA)</option>
+                    <option value="44">+44 (UK)</option>
+                    <option value="33">+33 (France)</option>
+                    <option value="81">+81 (Japan)</option>
+                </select>
+            </div>
+            <div style="float: left;  margin-top: 10px; margin: 10px;">
+                <input type="text" id="contact-number" name="contact-number" placeholder="Enter your contact number">
+            </div><br><br><br>
+            <input type="name" placeholder="kids Name"><br>
+            <p>Kid's Grade/Class in School</p>
+            <button class="btn">Grade <br> 1</button>
+            <button class="btn">Grade <br> 2-3</button>
+            <button class="btn">Grade <br> 4-6</button>
+            <button class="btn">Grade <br> 7-9</button>
+            <p>PAYMENT DETAILS</p>
+            <table border="1" style="border-radius: 5px; border-collapse: collapse; height: 80px; width: 100%; text-align: center; margin: 10px;">
+                <tr>
+                    <td>BEGINNER Basic Up To 8 Classes Over 2 Months (Group Classes)</td>
+                    <td>₹ 49,999</td>
+                </tr>
+                <tr>
+                    <td>Order Total</td>
+                    <td>₹ 49,999</td>
+                </tr>
+            </table>
+            <button class="btn1" style="color: blue;">Being paid now: <span style="font-size: 30px;"> ₹ 49,999 </span></button>
+            <button class="btn1" style="background-color: orange; border: 1px solid orange; color: white;">Proceed to Review</button>
+        </div>
+    </div>
+</body>
+</html>

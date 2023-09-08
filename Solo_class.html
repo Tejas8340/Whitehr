@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            width: 200px;
+            height: 40px;
+            margin-left: 40%;
+            font-weight: bolder;
+        }
+
+        .btn:hover {
+            background-color: orange;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn1 {
+            float: left;
+            width: 15%;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .btn {
+                width: 100%; /* Full width for mobile */
+                margin-left: 0; /* Center align for mobile */
+                margin-top: 10px; /* Add some space between buttons */
+            }
+
+            .btn1 {
+                width: 100%; /* Full width for mobile */
+                margin-left: 0; /* Center align for mobile */
+                margin-top: 10px; /* Add some space between buttons */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="btn">Coding Curriculum</button>
+    </div>
+    <a href="Price_2.html">
+        <div>
+            <div class="btn1">
+                <button class="btn">Beginner <br> (Grade 1)</button>
+            </div>
+            <div class="btn1">
+                <button class="btn">Intermediate <br>(Grade 2-3)</button>
+            </div>
+            <div class="btn1">
+                <button class="btn">Advanced <br>(Grade 4-6)</button>
+            </div>
+            <div class="btn1">
+                <button class="btn">Professional <br>(Grade 7-9)</button>
+            </div>
+            <div class="btn1">
+                <button class="btn">Applied Tech <br> (Grade 10+)</button>
+            </div>
+        </div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Common Styles for both Desktop and Mobile */
+        .para {
+            font-style: normal;
+            line-height: 30px;
+            border: 1px solid #ffedcc;
+            background-color: #ffedcc;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            margin-top: 50px;
+            width: 80%;
+            height: 400px;
+            margin-left: 10%;
+        }
+        .class-card {
+            float: left;
+            width: 40%;
+            margin-left: 70px;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        p {
+            margin-top: 5px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            /* Additional CSS for Mobile */
+            .para {
+                width: 100%; /* Full width on mobile */
+                height: auto; /* Adjust height as needed */
+            }
+            .class-card {
+                float: none; /* Remove float for stacking on mobile */
+                width: 100%; /* Full width on mobile */
+                margin-left: 0; /* Remove margin for stacking on mobile */
+                padding: 10px; /* Adjust padding as needed */
+                text-align: center; /* Center align on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="para">
+        <h2>We’re devoted to our mission of making this generation creators versus consumers of technology. Reach out to us for any assistance.</h2>
+        <div>
+            <div class="class-card">
+                <img src="images/call.png" alt="">
+                <p>0224821002</p>
+            </div>
+            <div class="class-card">
+                <img src="images/mail.png" alt="">
+                <p>Support@test.com</p>
+            </div>
+            <div class="class-card">
+                <img src="images/setting.png" alt="">
+                <p>Download Any Desk Here</p>
+            </div>
+            <div class="class-card">
+                <img src="images/complaint.png" alt="">
+                <a href="Complaint.html"><p>Complaint Redressal</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

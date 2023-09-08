@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            width: 100%;
+            height: 40px;
+            margin-top: 50px;
+            border-radius: 5px;
+            background-color: orange;
+            color: white;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+        input[type="text"] {
+            margin-top: 10px;
+            margin-right: 100px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .btn {
+                height: 36px; /* Adjust the button height for mobile */
+                font-size: 16px; /* Adjust the font size for mobile */
+                margin-top: 20px; /* Adjust the margin for mobile */
+            }
+
+            #country-code {
+                width: 70px; /* Adjust the select width for mobile */
+            }
+
+            #contact-number {
+                height: 30px; /* Adjust the input height for mobile */
+                width: 200px; /* Adjust the input width for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style=" width: 30%; height: 100px; margin-left: 30%; margin-top: 100px;">
+        <div style="float: left;">
+            <select id="country-code" name="country-code" style="height: 40px; width: 100px; border-radius: 5px;">
+                <option value="91">+91</option>
+                <option value="1">+1 (USA)</option>
+                <option value="44">+44 (UK)</option>
+                <option value="33">+33 (France)</option>
+                <option value="81">+81 (Japan)</option>
+            </select>
+        </div>
+        <div style="float: left;">
+            <input type="text" id="contact-number" name="contact-number" placeholder="Enter your contact number"  style="height: 32px; width: 300px; border-radius: 5px; margin-left: 40px;">
+        </div>
+        <button class="btn">Schedule a FREE Music Class</button>
+    </div>
+</body>
+</html>
